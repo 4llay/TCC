@@ -71,7 +71,7 @@ body::-webkit-scrollbar{
     }
 }
 
-/* uma formiga */
+/* duas formiga */
 @media (min-width: 475px) {
     .container{
         max-width: 475px;
@@ -146,3 +146,4 @@ body::-webkit-scrollbar{
     font-size: 2rem;
 }
 }
+
