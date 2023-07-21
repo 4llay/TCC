@@ -12,8 +12,8 @@ body{
     overflow-x: hidden;
     user-select: none;
     background: linear-gradient(to bottom, #add8e6, #ffc0cb);
-    width:100dvw;
-    height:100dvh;
+    min-width:100dvw;
+    min-height:100dvh;
 }
 
 body::-webkit-scrollbar{
