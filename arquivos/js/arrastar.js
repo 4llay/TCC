@@ -27,6 +27,7 @@ carousel.classList.remove("no-transition");
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+        console.log(firstCardWidth);
     });
 });
 

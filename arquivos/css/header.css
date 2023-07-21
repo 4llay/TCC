@@ -1,0 +1,168 @@
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+}
+
+.header__menu {
+    display:flex;
+    align-items: center;
+    list-style: none;
+    gap:2em;
+}
+
+#titulo{
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-family: 'Courgette', cursive;
+}
+
+.header__item,
+.header__line,
+.header__icon{
+    display: none;
+}
+
+.header__item,
+.header__icon,
+.header__bars:hover{
+    cursor:pointer;
+}
+
+#titulo:hover{
+    text-shadow: red -3px -3px,
+                 cyan 3px 3px;
+}
+
+.header__bars{
+    display:block;
+    color:black;
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
+}
+
+@media (min-width: 320px) {
+    #titulo{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 380px) {
+    #titulo{
+        font-size: 2rem;
+    }
+}
+
+/* ants do filme ants */
+@media (min-width: 475px) {
+    
+    .header__icon{
+        display:flex;
+        color:black;
+        font-size: 1.5rem;
+    }
+}
+
+/* pequititito */
+@media (min-width:640px) {
+    
+    #titulo{
+        font-size: 2.5rem;
+    }
+
+}
+
+/* tamanho ideal segundo 99% das mulheres */
+@media (min-width: 768px) {
+
+    .header__link{
+        display:flex;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 600;
+        color:rgb(82, 93, 104);
+        letter-spacing: -0.05em;
+    }
+    
+    .header__line{
+        border: 1px solid rgb(82, 93, 104);
+        padding-top: 2em;
+        display:flex;
+    }
+    
+    .header__bars:hover,
+    .header__icon:hover,
+    .header__link:hover{
+        color:crimson;
+    }
+    
+    .header__icon,
+    .header__bars,
+    .header__link{
+        transition: color 0.3s;
+    }
+
+    .header__item{
+        display: flex;
+    }
+}
+
+/* attack on titan */
+@media (min-width: 1024px) {
+    #titulo{
+        font-size: 2.7rem;
+    }
+
+    .header__link{
+        font-size: 1.2rem;
+    }
+    
+    .header__bars,
+    .header__icon{
+        font-size: 2.2rem;
+    }
+}
+
+/* kid bengala */
+@media (min-width: 1280px) {
+    #titulo{
+        font-size: 2.9rem;
+    }
+}
+
+/* o tempo até silk song sair */
+@media (min-width: 1536px) {
+    #titulo{
+        font-size: 3.1rem;
+    }
+
+    .header__link{
+        font-size: 1.3rem;
+    }
+    
+    .header__bars,
+    .header__icon{
+        font-size: 2.3rem;
+    }
+}
+
+/* no game no life season 2 */
+@media (min-width: 1736px) {
+    #titulo{
+        font-size: 3.3rem;
+    }
+
+    .header__link{
+        font-size: 1.5rem;
+    }
+    
+    .header__bars,
+    .header__icon{
+        font-size: 2.5rem;
+    }
+}

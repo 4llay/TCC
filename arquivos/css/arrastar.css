@@ -1,14 +1,3 @@
-#textoCones{
-    font-size: 5dvh;
-    font-family: 'Courgette', cursive;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top:15dvh;
-    left:50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
 .wrapper {
   max-width: 1400px;
   width: 100%;
@@ -73,11 +62,9 @@
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 500px;
+  height: 370px;
   list-style: none;
   border: 4px solid rgb(230, 231, 231);
-  /* background: linear-gradient(to left top, #ff02e6, #7e3dff); */
-  /* background-image: url(/imagem/zoeira/ddm.png); */
   cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column;
@@ -85,22 +72,23 @@
 }
 
 .card img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #fff;
 }
+
 .carousel .card h2 {
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin: 30px 0 5px;
   text-align: center;
   font-family: 'Courgette', cursive;
 }
 .carousel .card span {
   color: #000000;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1150px) {
@@ -113,4 +101,47 @@
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
+}
+
+@media (min-width: 300px){
+
+  .carousel .card h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 340px){
+  
+  .card img {
+    width: 270px;
+    height: 270px;
+  }
+
+  .carousel .card{
+    height: 400px;
+  }
+
+  .carousel .card h2{
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 380px){
+  
+  .card img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .carousel .card{
+    height: 450px;
+  }
+
+  .carousel .card h2{
+    font-size: 2rem;
+  }
+}
+
+@media (min-height: 380px){
+
 }

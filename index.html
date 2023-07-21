@@ -4,95 +4,65 @@
     <title>TCC</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="arquivos/css/style.css">
-    <link rel="stylesheet" href="arquivos/css/menu.css">
+    <link rel="stylesheet" href="arquivos/css/header.css">
     <link rel="stylesheet" href="arquivos/css/arrastar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cd773e3565.js" crossorigin="anonymous"></script>
     <script src="arquivos/js/arrastar.js" defer></script>
-    <!-- <script src="arquivos/js/menu.js" defer></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-
-    <div class="menu">
-        <button class="menuToggle" aria-controls="MenuList" aria-expanded="false"></button>
-      <div class="titulo"><a href="https://omelhortcc.vercel.app"><h1 id="titulo"> CONES TRUFADASSOS</h1></a></div>
-        <button class="userToggle" aria-controls="UserList" aria-expanded="false"></button>
-    </div>
-
-    <!-- <ul class="menuList" data-visible="false">
-        <li class="item">
-            <a href="https://omelhortcc.vercel.app">
-                <span>Home</span>
-            </a>
-        </li>
-        <li class="item">
-            <a href="arquivos/html/informaçoes.html">
-                <span>Informações</span>
-            </a>
-        </li>
-        <li class="item">
-            <a href="arquivos/html/creditos.html">
-                <span>Creditos</span>
-            </a>
-        </li>
-        <li class="item">
-            <a href="https://motoserra.vercel.app" target="_blank">
-                <span>:)</span>
-            </a>
-        </li>
-    </ul>
-
-    <ul class="userList" data-visible="false">
-        <li class="item">
-            <a href="index.html">
-                <span>Perfil</span>
-            </a>
-        </li>
-        <li class="item">
-            <a href="arquivos/html/informaçoes.html">
-                <span>configurações</span>
-            </a>
-        </li>
-        <li class="item">
-            <a href="arquivos/html/creditos.html">
-                <span>Mudar conta</span>
-            </a>
-        </li>
-        <li class="item">
-            <a href="https://motoserra.vercel.app" target="_blank">
-                <span>Sair</span>
-            </a>
-        </li>
-    </ul> -->
-
-    <div class="container">
+        <header class="header container">
+            <h1 id="titulo">Cones trufadassos</h1>
+            <nav>
+                <ul class="header__menu">
+                    <li class="header__item">
+                        <a class="header__link">Sobre</a>
+                    </li>
+                    
+                    <li class="header__item">
+                        <a class="header__link">contato</a>
+                    </li>
+                    
+                    <li class="header__line"></li>
+                    
+                    <li class="header__icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                    
+                    <li class="header__icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </li>
+                    
+                    <li>
+                        <button class="header__bars">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         
-
-
-        <div class="teste"><h1 id="textoCones"> Cones Trufadassos </h1></div>
-        
-        
-
-        <div class="wrapper">
-            <i id="left" class="fa-solid fa-circle-chevron-left"></i>
-            <ul class="carousel">
-                <li class="card">
-                    <img class="produto" src="imagem/cones/Paçoca.jpeg" alt="imagem" draggable="false">
+        <div class="hero">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-circle-chevron-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <img class="produto" src="imagem/cones/Paçoca.jpeg" alt="imagem" draggable="false">
                     <h2>Sabor paçoca</h2>
                     <span>R$ 10,00</span>
                 </li>
                 <li class="card">
                     <img class="produto" src="imagem/cones/Dois Amores.jpeg" alt="imagem" draggable="false">
                     <h2>Sabor dois amores</h2>
-                    <span>R$ 10,00$</span>
+                    <span>R$ 10,00</span>
                 </li>
                 <li class="card">
                     <img class="produto" src="imagem/cones/Ninho com Nutella.jpeg" alt="imagem" draggable="false">
-                    <h2>Sabor nicho com nutella</h2>
+                    <h2>Sabor nicho & nutella</h2>
                     <span>R$ 12,00</span>
                 </li>
                 <li class="card">
@@ -108,16 +78,11 @@
             </ul>
             <i id="right" class="fa-solid fa-circle-chevron-right"></i>
         </div>
-
-        <!-- <button class="footerButton" aria-controls="footer" aria-expanded="false"></button> -->
-
     </div>
-
-    <div class="footer" data-visible="false">
-      <p>Autores:  JP, GAGA, CACA, LELEH. ||| Copyright © 2023</p>
-      <p><a href="https://instagram.com/lg.cones_trufados.2023?igshid=MmIzYWVlNDQ5Yg==">Instagram</a></p>
-    </div> 
-
+    
+    <footer class="footer" data-visible="false">
+        <p>Autores:  JP, GAGA, CACA, LELEH.</p>
+        <p>Copyright © 2023</p>
+    </footer>
 </body>
-
 </html>
