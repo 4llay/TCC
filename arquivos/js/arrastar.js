@@ -65,20 +65,22 @@ const infiniteScroll = () => {
     }
 
     // Reinicia o tempo do autoplay e executa a função autoplay caso o mouse estiver fora do wrapper
-    clearTimeout(timeoutId);
-    if(!wrapper.matches(":hover")) autoPlay();
+    // clearTimeout(timeoutId);
+    // if(getComputedStyle(wrapper).getPropertyValue('--hovered') == 0) autoPlay();
 }
 
-const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Não deve fazer autoplay em dispositivo mobile
-    // Autoplay depois de 2500ms
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 4000);
-}
-autoPlay();
+// const autoPlay = () => {
+//     if(window.innerWidth < 800 || !isAutoPlay) return; // Não deve fazer autoplay em dispositivo mobile
+//     // Autoplay depois de 4s
+//     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 4000);
+// }
+// autoPlay();
+
+
 
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
+// wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+// wrapper.addEventListener("mouseleave", autoPlay);

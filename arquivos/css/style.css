@@ -40,6 +40,12 @@ body::-webkit-scrollbar{
     text-align: center;
 }
 
+#nomes:hover,
+#copyright:hover{
+    color: red;
+    transition: color 0.5s;
+}
+
 .footer a,
 .footer p{
     color: white;

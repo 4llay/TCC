@@ -19,7 +19,14 @@
   transform: translateY(-50%);
   transition: transform 0.1s linear;
   font-size: 60;
+  z-index: 9999;
 }
+
+.wrapper i:hover{
+  background-color:rgb(230, 101, 168);
+  transition: background-color 0.5s;
+}
+
 .wrapper i:active{
   transform: translateY(-50%) scale(0.85);
 }
@@ -69,6 +76,20 @@
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
+  transition: transform 0.5s;
+}
+
+.carousel .card:hover > img{
+  border-color: crimson;
+  transition: border 0.5s;
+}
+
+.carousel .card:hover{
+  color:crimson;
+  border-color: crimson;
+  transition: color 0.5s;
+  transition: border 0.5s;
+  transform: scale(0.95);
 }
 
 .card img {
@@ -89,6 +110,48 @@
 .carousel .card span {
   color: #000000;
   font-size: 1.5rem;
+  font-family: 'Courgette', cursive;
+}
+
+
+
+@media (min-width: 300px){
+  
+  .carousel .card h2{
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 340px){
+  
+  .card img {
+    width: 270px;
+    height: 270px;
+  }
+  
+  .carousel .card{
+    height: 400px;
+  }
+  
+  .carousel .card h2{
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 380px){
+  
+  .card img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .carousel .card{
+    height: 450px;
+  }
+  
+  .carousel .card h2{
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -101,47 +164,4 @@
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
-}
-
-@media (min-width: 300px){
-
-  .carousel .card h2{
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 340px){
-  
-  .card img {
-    width: 270px;
-    height: 270px;
-  }
-
-  .carousel .card{
-    height: 400px;
-  }
-
-  .carousel .card h2{
-    font-size: 1.7rem;
-  }
-}
-
-@media (min-width: 380px){
-  
-  .card img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .carousel .card{
-    height: 450px;
-  }
-
-  .carousel .card h2{
-    font-size: 2rem;
-  }
-}
-
-@media (min-height: 380px){
-
 }
