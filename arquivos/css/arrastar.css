@@ -76,7 +76,6 @@
   padding-bottom: 15px;
   flex-direction: column;
   border-radius: 8px;
-  transition: transform 0.5s;
 }
 
 .carousel .card:hover > img{
@@ -89,7 +88,6 @@
   border-color: crimson;
   transition: color 0.5s;
   transition: border 0.5s;
-  transform: scale(0.95);
 }
 
 .card img {
@@ -112,8 +110,6 @@
   font-size: 1.5rem;
   font-family: 'Courgette', cursive;
 }
-
-
 
 @media (min-width: 300px){
   

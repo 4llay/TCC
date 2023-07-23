@@ -10,8 +10,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     overflow-x: hidden;
-    user-select: none;
-    background: linear-gradient(to bottom, #add8e6, #ffc0cb);
+    background: linear-gradient(to bottom, #add8e6, hsl(350, 100%, 88%));
     min-width:100dvw;
     min-height:100dvh;
 }
@@ -21,6 +20,7 @@ body::-webkit-scrollbar{
 }
 
 .hero{
+    user-select: none;
     display: flex;
     padding: 0 35px;
     align-items: center;
