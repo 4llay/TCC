@@ -62,11 +62,6 @@
 /* ants do filme ants */
 @media (min-width: 475px) {
     
-    .header__icon{
-        display:flex;
-        color:black;
-        font-size: 1.5rem;
-    }
 }
 
 /* pequititito */
@@ -75,12 +70,12 @@
     #titulo{
         font-size: 2.5rem;
     }
-
+    
 }
 
 /* tamanho ideal segundo 99% das mulheres */
 @media (min-width: 768px) {
-
+    
     .header__link{
         display:flex;
         font-size: 1rem;
@@ -94,6 +89,12 @@
         border: 1px solid rgb(82, 93, 104);
         padding-top: 2em;
         display:flex;
+    }
+    
+    .header__icon{
+        display:flex;
+        color:black;
+        font-size: 1.5rem;
     }
     
     .header__bars:hover,

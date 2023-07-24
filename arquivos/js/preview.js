@@ -1,5 +1,5 @@
-let preveiwContainer = document.querySelector('.products-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
+const preveiwContainer = document.querySelector('.products-preview');
+const previewBox = preveiwContainer.querySelectorAll('.preview');
 let segurandoMouse = false;
 let idTimeout;
 
@@ -12,6 +12,7 @@ document.addEventListener(
 document.querySelectorAll('.carousel .card').forEach(product =>{
   product.onclick = () =>{
     if(segurandoMouse) return;
+    mobileNav.style.display = 'none';
     preveiwContainer.style.display = 'flex';
     let name = product.getAttribute('data-name');
     previewBox.forEach(preview =>{
