@@ -1,13 +1,12 @@
 .mobile-nav{
     position: absolute;
-    border: 5px solid rgb(236, 236, 236);
-    top:4.5rem;
-    right:.5rem;
-    z-index: 99999;
-    width: 16.5rem;
+    top:0;
+    right:0;
+    z-index: 999;
+    width: 100%;
+    height:100%;
     background: linear-gradient(to bottom, hsl(350, 100%, 88%), #add8e6);
     padding: 2rem;
-    border-radius: 20%;
     display:none;
     align-items: center;
     justify-content: center;
@@ -19,7 +18,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap:.6rem;
+    gap:1.5rem;
     text-align: center;
 }
 
@@ -40,6 +39,16 @@
 .mobile-nav__text{
     font-family: 'Courgette', cursive;
     font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s;
+    cursor:pointer;
+    -webkit-user-select: none;
+}
+
+.mobile-nav__text:hover{
+    color:crimson;
 }
 
 .profile-button{
@@ -63,34 +72,41 @@
     font-size: 1.3rem;
 }
 
-@media (min-width: 320px) {
-    .mobile-nav{
-        top:6rem;
-        right: 1.5rem;
-        transform: scale(1.1);
-    }
-}
-
-@media (min-width: 380px) {
-    .mobile-nav{
-        top:8rem;
-        right: 2.5rem;
-        transform: scale(1.2);
-    }
-}
-
 /* ants do filme ants */
 @media (min-width: 475px) {
     .mobile-nav{
-        top:8.5rem;
+        position: absolute;
+        border: 5px solid rgb(236, 236, 236);
+        top:10rem;
         right: 3.2rem;
+        height: auto;
+        z-index: 99999;
+        width: 16.5rem;
+        background: linear-gradient(to bottom, hsl(350, 100%, 88%), #add8e6);
+        padding: 2rem;
+        border-radius: 20%;
+        display:none;
+        align-items: center;
+        justify-content: center;
         transform: scale(1.3);
     }
 }
 
 /* tamanho ideal segundo 99% das mulheres */
 @media (min-width: 768px) {
+    .erase{
+        display: none;
+    }
     .mobile-nav{
-        display:none;
+        top:12.5rem;
+        right: 6rem;
+        transform: scale(1.6);
+    }
+}
+
+/* no game no life season 2 */
+@media (min-width: 1736px) {
+    .mobile-nav{
+        top:13.5rem;
     }
 }

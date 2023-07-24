@@ -45,6 +45,8 @@
     background-color: transparent;
     border: 0;
     font-size: 2rem;
+    position: relative;
+    z-index: 9999;
 }
 
 @media (min-width: 320px) {
