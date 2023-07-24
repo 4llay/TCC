@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background: linear-gradient(to bottom, #add8e6, hsl(350, 100%, 88%));
     min-width:100dvw;
     min-height:100dvh;
