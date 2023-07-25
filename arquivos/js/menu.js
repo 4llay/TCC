@@ -5,11 +5,13 @@ let erase = ['contato', 'sobre'];
 let menuAberto = false;
 
 menuBtn.addEventListener('click', () => {
-    menuAberto = !menuAberto;
     if(menuAberto){
         mobileNav.style.display = 'none';
+        console.log("b");
     } else{
         preveiwContainer.style.display = 'none';
         mobileNav.style.display = 'flex';
+        console.log("a");
     }
+    menuAberto = !menuAberto;
 });
