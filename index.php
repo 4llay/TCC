@@ -63,7 +63,7 @@
                         <li class="mobile-nav__text">Historico de compra</li>
                         <li class="mobile-nav__text">Carrinho</li>
                         <li class="mobile-nav__line"></li>
-                        <li class="mobile-nav__text">Sair</li>
+                        <li class="mobile-nav__text"><a href="/arquivos/php/login.php">Fazer Login</a></li>
                     </ul>
                 </nav>
             </div>
@@ -173,9 +173,6 @@
      </div>
     
         <!--fim do preview de produtos -->
-
-        <a href="/arquivos/html/login.html">ISTO È APENAS UM TESTE</a>
-        <a href="/arquivos/html/cadastro.html">ISTO È APENAS UM TESTE2</a>
 
         <!-- creditos -->
     <footer class="footer" data-visible="false">

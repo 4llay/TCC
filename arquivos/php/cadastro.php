@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/arquivos/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/TCC/arquivos/css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <script src="/TCC/arquivos/js/menu.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +20,21 @@
         <h1 id="titulo">Cones trufadassos</h1>
     </header>
 
-    <div class="page">
-        <form method="POST" class="formLogin">
-            <h1>Login</h1>
+        <form method="POST" class="formReg">
+            <h1>Registrar-se</h1>
             <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" />
-            <a href="/">Esqueci minha senha</a>
-            <input type="submit" value="Acessar" class="btn" />
+            <label for="email">Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" class="box" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" class="box" required>
+            <label for="email">Senha</label>
+            <input type="password" name="password" placeholder="Digite sua senha" class="box" required>
+            <label for="email">Confirmar senha</label>
+            <input type="password" name="cpassword" placeholder="confirme sua senha" class="box" required>
+            <input type="file" name="image" class="box" accept="image/jpg, image/jpeg, image/png">
+            <input type="submit" name="submit" value="Registre-se agora" class="btn">
+            <p>Ja possui uma conta? <a href="login.php">Faça seu login aqui.</a></p>
         </form>
-    </div>
 
         <footer class="footer" data-visible="false">
             <p id="nomes">Autores:  JP, GAGA, CACA, LELEH.</p>
