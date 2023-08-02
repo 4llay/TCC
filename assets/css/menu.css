@@ -46,6 +46,7 @@
     transition: color 0.3s;
     cursor:pointer;
     -webkit-user-select: none;
+    user-select: none;
 }
 
 .mobile-nav__text:hover{
