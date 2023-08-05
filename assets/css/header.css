@@ -19,7 +19,7 @@
     color: black;
     font-size: 1.5rem;
     padding-left: 1rem;
-    font-family: 'Courgette', cursive;
+    font-family: 'handjet', cursive; 
 }
 
 .header__item,
@@ -34,10 +34,7 @@
     cursor:pointer;
 }
 
-#titulo:hover{
-    text-shadow: red -3px -3px,
-                 cyan 3px 3px;
-}
+
 
 .header__bars{
     display:block;

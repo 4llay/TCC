@@ -42,20 +42,20 @@
     font-size: 1.5rem;
     font-weight: 300;
     text-decoration: none;
-    color:black;
+    color:rgb(0, 0, 0);
     transition: color 0.3s;
     cursor:pointer;
     -webkit-user-select: none;
+    user-select: none;
 }
 
 .mobile-nav__text:hover{
-    color:crimson;
+    color:rgb(212, 34, 34);
 }
 
 .profile-button{
     width: 14rem;
     height: 3.5rem;
-    border-radius: 10%;
     background-color: pink;
     display: flex;
     align-items: center;
@@ -63,8 +63,8 @@
 }
 
 .profile-button__img{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
@@ -85,7 +85,7 @@
         width: 16.5rem;
         background: linear-gradient(to bottom, hsl(350, 100%, 88%), #add8e6);
         padding: 2rem;
-        border-radius: 20%;
+        border-radius: 3%;
         display:none;
         align-items: center;
         justify-content: center;

@@ -42,7 +42,7 @@ body::-webkit-scrollbar{
 
 #nomes:hover,
 #copyright:hover{
-    color: red;
+    color: rgb(255, 0, 255);
     transition: color 0.5s;
 }
 
