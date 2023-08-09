@@ -38,6 +38,8 @@ body::-webkit-scrollbar{
     bottom: 1vh;
     padding: 10px;
     text-align: center;
+    user-select: none;
+      
 }
 
 #nomes:hover,
