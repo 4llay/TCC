@@ -2,6 +2,7 @@
   max-width: 1400px;
   width: 100%;
   position: relative;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .wrapper i {
@@ -69,13 +70,16 @@
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 370px;
+  height: 380px;
   list-style: none;
-  border: 4px solid rgb(230, 231, 231);
+ 
   cursor: pointer;
   padding-bottom: 15px;
-  flex-direction: column;
-  border-radius: 8px;
+  flex-direction: column; 
+  background: linear-gradient(to bottom, #ffc0cb, #add8e6 );
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 18px;
+  
 }
 
 .carousel .card:hover > img{
@@ -93,22 +97,22 @@
 .card img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 40%;
   object-fit: cover;
-  border: 4px solid #fff;
+  border: 3px solid #000000;
 }
 
 .carousel .card h2 {
   font-weight: 500;
-  font-size: 1.3rem;
-  margin: 30px 0 5px;
+  font-size: 1.8rem;
+  margin: 5px 0 5px;
   text-align: center;
   font-family: p
   
 }
 .carousel .card span {
   color: #000000;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: p
 }
 
@@ -147,7 +151,7 @@
   }
   
   .carousel .card h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
