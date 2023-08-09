@@ -79,13 +79,13 @@
 }
 
 .carousel .card:hover > img{
-  border-color: rgb(220, 20, 177);
+  border-color: rgb(33, 20, 220);
   transition: border 0.5s;
 }
 
 .carousel .card:hover{
-  color:rgb(220, 20, 177);
-  border-color: rgba(219, 26, 177, 0.849);
+  color:rgb(0, 0, 0);
+  border-color: rgba(242, 187, 247, 0.849);
   transition: color 0.5s;
   transition: border 0.5s;
 }
