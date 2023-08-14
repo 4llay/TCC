@@ -25,7 +25,7 @@
 
 #titulo{
     color: black;
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding-left: 1rem;
     font-family: 'Courgette', cursive;
 }
@@ -56,19 +56,21 @@
 
 @media (min-width: 320px) {
     #titulo{
-        font-size: 1.8rem;
+        font-size: 3.5rem;
     }
 }
 
 @media (min-width: 380px) {
     #titulo{
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
 }
 
 /* ants do filme ants */
 @media (min-width: 475px) {
-    
+    #titulo{
+        font-size: 2.5rem;
+    }
 }
 
 /* pequititito */
@@ -148,7 +150,7 @@
 /* o tempo até silk song sair */
 @media (min-width: 1536px) {
     #titulo{
-        font-size: 3.1rem;
+        font-size: 2.1rem;
     }
 
     .header__link{
@@ -164,7 +166,7 @@
 /* no game no life season 2 */
 @media (min-width: 1736px) {
     #titulo{
-        font-size: 3.3rem;
+        font-size: 4rem;
     }
 
     .header__link{

@@ -23,10 +23,7 @@
   z-index: 9999;
 }
 
-.wrapper i:hover{
-  background-color:rgb(230, 101, 168);
-  transition: background-color 0.5s;
-}
+
 
 .wrapper i:active{
   transform: translateY(-50%) scale(0.85);
@@ -72,7 +69,6 @@
   scroll-snap-align: start;
   height: 380px;
   list-style: none;
- 
   cursor: pointer;
   padding-bottom: 15px;
   flex-direction: column; 
@@ -83,13 +79,12 @@
 }
 
 .carousel .card:hover > img{
-  border-color: rgb(220, 20, 177);
+  
   transition: border 0.5s;
 }
 
 .carousel .card:hover{
-  color:rgb(220, 20, 177);
-  border-color: rgba(219, 26, 177, 0.849);
+
   transition: color 0.5s;
   transition: border 0.5s;
 }
@@ -107,14 +102,9 @@
   font-size: 1.8rem;
   margin: 5px 0 5px;
   text-align: center;
-  font-family: p
-  
+  font-family: 'Playfair Display', serif;
 }
-.carousel .card span {
-  color: #000000;
-  font-size: 1.4rem;
-  font-family: p
-}
+
 
 @media (min-width: 300px){
   
@@ -136,6 +126,7 @@
   
   .carousel .card h2{
     font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
   }
 }
 
