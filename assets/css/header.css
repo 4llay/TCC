@@ -54,6 +54,16 @@
     z-index: 9999;
 }
 
+.logo{
+    position: absolute;
+    width:6%;
+    transform: translate(-20%,-10%); 
+}
+
+#titulo{
+    transform: translateX(20%);
+}
+
 @media (min-width: 320px) {
     #titulo{
         font-size: 3.5rem;
